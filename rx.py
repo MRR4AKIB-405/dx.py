@@ -114,20 +114,7 @@ class Main:
 		self.cp = []
 		self.loop = 0
 		try:
-			#yahan pr v apna github link dalna aproval wala
-			plr = requests.get('https://github.com/MRR4AKIB-405pprova.-txt/blob/main/appro.txt').text
-			if basesplit in plr:
-				key = basesplit
-				stat = ("\033[0;97mPREMIUM")
-				FY = '\033[0;97m'
-				FG = '\033[0;97m'
-				GET = '\r'
-			else:
-				key = ("\033[0;97m -")
-				stat = ("\033[0;97mFREE USER")
-				FY = '\033[0;90m'
-				FG = '\033[0;90m'
-				GET = '\033[0;97m [P] GET PREMIUM'
+			
 		except requests.exceptions.ConnectionError:
 			print("\n%s [!] NO INTERNET CONNECTION..\n"%(R))
 			exit()
